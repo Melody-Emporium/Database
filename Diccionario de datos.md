@@ -116,6 +116,7 @@ Descripción: Almacena información de los productos disponibles.
 | artist_id         | Identificador único del artista               | INT          |          | PK            | NOT NULL            |
 | name              | Nombre del artista                            | VARCHAR      | 255      |               | NOT NULL            |
 | picture_url       | URL de la imagen del artista                  | TINYINT      |          |               |                     |
+| main genre        | Género principal del artista                  | VARCHAR      | 255      |               |                     |                  
 
 Descripción: Almacena información de los artistas.
 
