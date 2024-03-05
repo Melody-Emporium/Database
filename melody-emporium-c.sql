@@ -78,7 +78,8 @@ CREATE TABLE users
     email       VARCHAR(255)    NOT NULL,
     pass        VARCHAR(255)    NOT NULL,
     picture_url TINYTEXT        NOT NULL,
-    is_admin    BOOLEAN         NOT NULL DEFAULT 0
+    is_admin    BOOLEAN         NOT NULL DEFAULT 0,
+    is_active   BOOLEAN         NOT NULL DEFAULT 1
 );
 
 -- Create carts table
