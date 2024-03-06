@@ -1,4 +1,6 @@
--- table genres 
+USE melody_emporium;
+
+-- table genres
 INSERT INTO genres (genre_id, name) VALUES (1, 'Rock');
 INSERT INTO genres (genre_id, name) VALUES (2, 'Pop');
 INSERT INTO genres (genre_id, name) VALUES (3, 'Hip Hop');
