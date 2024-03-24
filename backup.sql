@@ -26,7 +26,7 @@ CREATE TABLE `artists` (
   `artist_id` int NOT NULL,
   `name` varchar(255) NOT NULL,
   `picture_url` tinytext,
-  `main_genre` tinytext,
+  `main_genre` varchar(255),
   PRIMARY KEY (`artist_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
