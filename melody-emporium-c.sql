@@ -17,7 +17,8 @@ CREATE TABLE genres
 (
     genre_id    CHAR(36) PRIMARY KEY NOT NULL,
     name        VARCHAR(255)         NOT NULL,
-    picture_url TINYTEXT
+    picture_url TINYTEXT,
+    main_genre VARCHAR(255)
 );
 
 ALTER TABLE genres
