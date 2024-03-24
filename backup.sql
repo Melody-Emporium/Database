@@ -26,6 +26,7 @@ CREATE TABLE `artists` (
   `artist_id` int NOT NULL,
   `name` varchar(255) NOT NULL,
   `picture_url` tinytext,
+  `main_genre` tinytext,
   PRIMARY KEY (`artist_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
@@ -36,7 +37,7 @@ CREATE TABLE `artists` (
 
 LOCK TABLES `artists` WRITE;
 /*!40000 ALTER TABLE `artists` DISABLE KEYS */;
-INSERT INTO `artists` VALUES (1,'Michael Jackson',NULL),(2,'The Beatles',NULL),(3,'Elvis Presley',NULL),(4,'Madonna',NULL),(5,'Queen',NULL),(6,'Bob Dylan',NULL),(7,'David Bowie',NULL),(8,'Prince',NULL),(9,'Led Zeppelin',NULL),(10,'Bob Marley',NULL),(11,'Pink Floyd',NULL),(12,'Beyoncé',NULL),(13,'The Rolling Stones',NULL),(14,'Bruce Springsteen',NULL),(15,'U2',NULL),(16,'Stevie Wonder',NULL),(17,'Adele',NULL),(18,'Eminem',NULL),(19,'Whitney Houston',NULL),(20,'Coldplay',NULL),(21,'Taylor Swift',NULL),(22,'Rihanna',NULL),(23,'Metallica',NULL),(24,'Kanye West',NULL),(25,'Nirvana',NULL);
+INSERT INTO `artists` VALUES (1,'Michael Jackson',NULL, 'Rock'),(2,'The Beatles',NULL, 'Pop'),(3,'Elvis Presley',NULL,'Rock'),(4,'Madonna',NULL,'Rock'),(5,'Queen',NULL,'Alternativa'),(6,'Bob Dylan',NULL,'Electrónica'),(7,'David Bowie',NULL,'Techno'),(8,'Prince',NULL,'Clásica'),(9,'Led Zeppelin',NULL,'Rock'),(10,'Bob Marley',NULL,'Rock'),(11,'Pink Floyd',NULL,'Rock'),(12,'Beyoncé',NULL,'Rock'),(13,'The Rolling Stones',NULL,'Rock'),(14,'Bruce Springsteen',NULL,'Rock'),(15,'U2',NULL,'Rock'),(16,'Stevie Wonder',NULL,'Rock'),(17,'Adele',NULL,'Rock'),(18,'Eminem',NULL,'Rock'),(19,'Whitney Houston',NULL,'Rock'),(20,'Coldplay',NULL,'Rock'),(21,'Taylor Swift',NULL,'Caca'),(22,'Rihanna',NULL,'Rock'),(23,'Metallica',NULL,'Rock'),(24,'Kanye West',NULL,'Rock'),(25,'Nirvana',NULL,'Rock');
 /*!40000 ALTER TABLE `artists` ENABLE KEYS */;
 UNLOCK TABLES;
 
